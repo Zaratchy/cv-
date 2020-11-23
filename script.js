@@ -1,0 +1,52 @@
+let hamButton = document.querySelector('.ham');
+let navbar = document.querySelector('.navbar-mobile');
+
+hamButton.addEventListener('click',openmenu);
+
+function openmenu(){
+    navbar.classList.toggle('showNav');
+    hamButton.classList.toggle('showClose');
+}
+
+let menuLinks = document.querySelectorAll('.menuLink');
+
+menuLinks.forEach(
+    function(menuLink){ 
+        menuLink.addEventListener('click',openmenu);
+    }
+)
+
+$(function() {
+    $('#contact-form').submit(function(e) {
+        e.preventDefault();
+        $('.comments').empty();
+        var postdata = $('#contact-form').serialize();
+        
+        $.ajax({
+            type: 'POST',
+            url: 'form-contact.php',
+            data: postdata,
+            dataType: 'json',
+            success: function(json) {
+                 
+                if(json.isSuccess) 
+                {
+                    $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
+                    $('#contact-form')[0].reset();
+                }
+                else
+                {
+                    $('#firstname + .comments').html(json.firstnameError);
+                    $('#name + .comments').html(json.nameError);
+                    $('#email + .comments').html(json.emailError);
+                    $('#phone + .comments').html(json.phoneError);
+                    $('#message + .comments').html(json.messageError);
+                }                
+            }
+        });
+    });
+    
+})
+
+
+

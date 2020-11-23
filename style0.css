@@ -1,0 +1,349 @@
+/*Global*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 40px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 30px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+p,
+a{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*Header*/
+header {
+  display: flex;
+  background-image: url(images/Black-And-White-Background-Desktop-Wallpaper-16252.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#screen-left {
+  background-color: rgba(5, 3, 0, 0.493);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+}
+.name-word {
+  color: rgb(226, 221, 205);
+  line-height: 40px;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 10px;
+}
+#screen-rigth {
+  width: 100%;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-motivation {
+  display: flex;
+  vertical-align: auto;
+  width: 79%;
+}
+.text-motivation p {
+  background-color: rgba(61, 56, 56, 0.748);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.text-motivation p:hover {
+  background-color: rgba(49, 45, 45, 0.836);  
+}
+/*Menu mobile*/
+.title-mobile {
+  text-align: center;
+  margin: 70px;
+}
+.title-mobile h2,
+.title-mobile h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+.full-nav-mobile {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+}
+.ham {
+  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+}
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+}
+
+.navbar-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(5, 3, 0, 0.836);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.showNav {
+  transform: translateY(0);
+}
+
+.navbar-mobile ul {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.navbar-mobile ul li a {
+  color: rgb(160, 157, 145);
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.navbar-mobile ul li a:hover,
+.navbar-mobile ul li a:active {
+  border-bottom: 2px solid white;
+  color: white;
+}
+/*Nav-bar*/
+nav ul {
+  margin-left: 20px;
+}
+nav ul li {
+  font-size: 20px;
+  line-height: 35px;
+}
+nav ul li a {
+  color: rgb(160, 157, 145);
+}
+nav ul li a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  border-radius: 5%;
+}
+/*Networks*/
+.networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.networks ul {
+  display: flex;
+}
+.networks ul li a img {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50%;
+}
+.networks ul li a img:hover {
+  background-color: rgb(127, 204, 255);
+  width: 60%;
+}
+
+/*Menu pc*/
+#screen-left {
+  display: none;
+}
+/*SKILLS*/
+#skills{
+  width: 100%;
+  background-image: url(images/Black-And-White-Background-HD-Wallpaper-16254.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills img {
+  width: 90px;
+}
+.languages {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(130, 129, 129, 0.507);
+  padding: 51px;
+}
+.languages-first,
+.languages-second  {
+  display: flex;
+  flex-direction: column;
+}
+/*Expériences*/
+#experiences {
+  background-image: url(images/image-2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.568);
+  margin: 20px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.933);
+}
+/*Schools*/
+#schools {
+  background-image: url(images/image\ 1.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  color: rgb(33, 33, 33);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.school {
+  margin: 40px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.39);
+  border-radius: 10px;
+}
+/*Portfolio*/
+#portfolios {
+  background-image: url(images/3259187.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio {
+  margin: 20px;
+}
+.portfolio img {
+  width: 400px;
+  border-radius: 10px;
+}
+.portfolio a img:hover {
+  width: 440px;
+}
+/*Contact*/
+#contacts {
+  background-image: url(images/3259187.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+form {
+  text-align: center;
+}
+textarea {
+  padding-right: 85px;
+}
+.contact {
+  margin-top: 30px;
+}
+/*footer*/
+footer {
+  background-color: black;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+footer p {
+  margin-top: 250px;
+  padding: 20px;
+}
+@media screen and (min-width: 768px){
+  .full-nav-mobile {
+    display: none;
+   }
+   .title-mobile {
+     display: none;
+   }
+  /*Menu pc*/
+#screen-left {
+  display: block;
+  }
+  #screen-rigth,
+  .languages,
+  .experience,
+  .school,
+  .contact,
+  .portfolio { 
+  margin-left: 250px;
+  }
+}
+
