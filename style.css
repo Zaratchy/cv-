@@ -47,7 +47,8 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  max-width: 100%;
 }
 #screen-left {
   background-color: rgba(5, 3, 0, 0.726);
@@ -70,13 +71,14 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+  
 .text-motivation {
-  width: 79%;
+
 }
 .text-motivation p {
   background-color: rgba(61, 56, 56, 0.377);
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -211,7 +213,7 @@ nav ul li a:hover {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,6 +225,8 @@ nav ul li a:hover {
 .languages {
   display: flex;
   flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 40px;
 }
 .languages img {
@@ -256,7 +260,7 @@ nav ul li a:hover {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   color: rgb(33, 33, 33);
   display: flex;
   flex-direction: column;
@@ -264,8 +268,8 @@ nav ul li a:hover {
   align-items: center;
 }
 .school {
-  margin: 40px;
-  padding: 40px;
+  margin: 30px;
+  padding: 30px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.39);
   border-radius: 10px;
@@ -286,11 +290,11 @@ nav ul li a:hover {
   margin: 20px;
 }
 .portfolio img {
-  width: 400px;
+  width: 300px;
   border-radius: 10px;
 }
 .portfolio a img:hover {
-  width: 440px;
+  width: 330px;
 }
 /*Contact*/
 #contacts {
@@ -298,7 +302,7 @@ nav ul li a:hover {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,6 +323,7 @@ textarea {
 }
 .contact {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 /*footer*/
 footer {
@@ -354,8 +359,14 @@ footer p {
   .portfolio { 
   margin-left: 250px;
   }
-  h3 {
-    margin-left:;
+  .text-motivation {
+    margin: 20px;
+  }
+  #skills,
+  header,
+  #schools,
+  #contacts {
+    height: 100vh;
   }
 }
 
