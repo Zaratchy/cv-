@@ -25,6 +25,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.46);
   padding: 15px;
   border-radius: 10px;
+  color: #ed2901;
 }
 h3 {
   font-size: 30px;
@@ -35,6 +36,10 @@ h3 {
   border-radius: 10px;
   color: #fff;
   margin: 20px;
+  border: 1px solid #ed2901;
+}
+h4 {
+  color: #ed2901;
 }
 
 p,
@@ -45,6 +50,15 @@ h6{
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.933);
+}
 /*Header*/
 header {
   display: flex;
@@ -52,7 +66,7 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 120vh;
   max-width: 100%;
 }
 .button-2 {
@@ -62,7 +76,7 @@ header {
 }
 .button-2:hover {
   background-color: rgba(0, 0, 0, 0.61);
-  color: rgb(255, 255, 255);
+  color: #ed2901;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
  }
@@ -143,7 +157,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(5, 3, 0, 0.836);
+  background-color: rgba(5, 3, 0, 0.911);
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -170,7 +184,7 @@ header {
 
 
 .navbar-mobile ul li a {
-  color: rgb(160, 157, 145);
+  color: rgb(236, 233, 214);
   padding-bottom: 10px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -191,10 +205,10 @@ nav ul li {
   line-height: 35px;
 }
 nav ul li a {
-  color: rgb(160, 157, 145);
+  color: rgb(231, 228, 216);
 }
 nav ul li a:hover {
-  color: #fff;
+  color: #ed2901;
   border-bottom: 2px solid #fff;
   border-radius: 5%;
 }
@@ -283,9 +297,11 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 .school {
-  margin: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 50px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.39);
@@ -331,16 +347,21 @@ textarea {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
   background-color: rgba(255, 255, 255, 0.651);
   color: rgb(0, 0, 0);
 }
+textarea {
+  padding: 80px;
+}
 .button-1 {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .button-1:hover {
   background-color: rgba(0, 0, 0, 0.61);
-  color: rgb(255, 255, 255);
+  color: #ed2901;
 }
 form {
   text-align: center;
@@ -385,7 +406,8 @@ footer p {
   .experience,
   .school,
   .contact,
-  .portfolio { 
+  .portfolio,
+  .title { 
   margin-left: 250px;
   }
   .text-motivation {
