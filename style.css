@@ -31,12 +31,11 @@ h3 {
   font-size: 30px;
   font-family: 'Rajdhani', sans-serif;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.46);
+  background-color: #ed2901;
   padding: 15px;
   border-radius: 10px;
   color: #fff;
   margin: 20px;
-  border: 1px solid #ed2901;
 }
 h4 {
   color: #ed2901;
@@ -46,7 +45,8 @@ p,
 a,
 h4,
 h5,
-h6{
+h6,
+li {
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -284,6 +284,7 @@ nav ul li a:hover {
   margin: 20px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.933);
+  padding: 20px;
 }
 /*Schools*/
 #schools {
@@ -309,9 +310,8 @@ nav ul li a:hover {
 }
 /*Portfolio*/
 #portfolios {
-  background-image: url(images/3259187.jpg);
+  background-image: url(images/Black-And-White.png);
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   display: flex;
@@ -331,9 +331,8 @@ nav ul li a:hover {
 }
 /*Contact*/
 #contacts {
-  background-image: url(images/Black-And-White-Background-HD-Wallpapers-16255.jpg);
+  background-image: url(images/3259187.jpg);
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   display: flex;
